@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>ParikshaResult - Files</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 30px; background: #f5f5f5; }
+h1 { color: #2c3e50; }
+ul { list-style: none; padding: 0; }
+li { margin: 10px 0; }
+a { text-decoration: none; color: #2980b9; font-size: 16px; }
+a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<h1>ParikshaResult.com - Files</h1>
+<ul>
+<li>📄 <a href="RAILWAY%20ALP%20SLLABUS.pdf" target="_blank">Railway ALP Syllabus</a></li>
+<li>📄 <a href="SSC%20STENOGRAPHER%20SYLLABUS.pdf" target="_blank">SSC Stenographer Syllabus</a></li>
+<li>📄 <a href="UKSSSC_Patwari_VDO_Lekhpal_Syllabus.pdf" target="_blank">UKSSSC Patwari VDO Lekhpal Syllabus</a></li>
+</ul>
+</body>
+</html>
