@@ -21,3 +21,37 @@ a:hover { text-decoration: underline; }
 </ul>
 </body>
 </html>
+<div>
+  <input type="file" id="pdfFile" accept="application/pdf">
+  <button onclick="uploadPDF()">Upload PDF</button>
+  <p id="result"></p>
+</div>
+
+<script>
+async function uploadPDF() {
+  const fileInput = document.getElementById('pdfFile');
+  const file = fileInput.files[0];
+  
+  if (!file) {
+    alert("Pehle PDF select karo");
+    return;
+  }
+
+  document.getElementById('result').innerHTML = "Upload ho raha hai...";
+
+  const formData = new FormData();
+  formData.append('file', file);
+
+  try {
+    const res = await fetch('https://pdf-uploader.yourname.workers.dev', {
+      method: 'POST',
+      body: formData
+    });
+    const data = await res.json();
+    document.getElementById('result').innerHTML = 
+      `Ho gaya! Link: <a href="${data.url}" target="_blank">${data.url}</a>`;
+  } catch (err) {
+    document.getElementById('result').innerHTML = "Error: upload nahi hua";
+  }
+}
+</script>
